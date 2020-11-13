@@ -1,0 +1,214 @@
+body{
+    background-color: rgb(192, 125, 38);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    border: none;
+    margin: none;
+    font-family: cursive;
+    border: none;
+    margin: none;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 95%;
+}
+
+.underline{
+    padding: 0px 20px 0px 20px;
+    border-bottom: thin solid rgb(255, 229, 172);
+}
+.btn-container{
+    width: 60%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.filter-btn{
+    background: none;
+    border: thin solid rgb(255, 229, 172);
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    font-size: larger;
+}
+.filter-btn:hover{
+    background-color: rgb(255, 229, 172);
+    color: black;
+    box-shadow: 1px 2px 5px rgb(63, 63, 63);
+    border: thin solid black;
+}
+
+.section-center{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+.left-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.photo{
+    width: 250px;
+    height: 175px;
+    border-radius: 5px;
+    border: thin solid rgb(255, 229, 172);
+}
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    border: thin solid rgb(255, 229, 172);
+}
+.item-info{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.item-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: thin solid rgb(255, 229, 172);
+}
+.price{
+    color: rgb(255, 229, 172);
+}
+.add-btn{
+    background-color: gold;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+}
+.right-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 95%;
+}
+.remove-btn{
+    background: rgb(255, 49, 49);
+    border: thin solid black;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+}
+.cart-item{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: thin solid black;
+}
+.purchase{
+    border: none;
+    background: none;
+    background-color: teal;
+    font-size: larger;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.purchase:hover{
+    border: thin solid rgb(0, 0, 0);
+    box-shadow: 0px 2px 5px rgb(63, 63, 63);
+}
+
+@media screen and (max-width: 650px){
+    
+    .section-center{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0px 30px 0px;
+        width: 95%;
+        
+    }
+    .menu-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        border: thin solid rgb(255, 229, 172);
+    }
+    .left-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .photo{
+        width: 80%;
+        height: 225px;
+        border-radius: 5px;
+        border: thin solid rgb(255, 229, 172);
+    }
+    .btn-container{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;        
+    }
+    .filter-btn{
+        background: none;
+        border: thin solid rgb(255, 229, 172);
+        cursor: pointer;
+        padding: 10px 10px 10px 10px;
+        border-radius: 5px;
+        font-size: larger;
+    }
+}
+@media screen and (max-width: 1250px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0px 30px 0px;
+        width: 90%;
+    }
+    .menu-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        border: thin solid rgb(255, 229, 172);
+    }
+    .left-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .photo{
+        width: 80%;
+        height: 225px;
+        border-radius: 5px;
+        border: thin solid rgb(255, 229, 172);
+    }
+    .btn-container{
+        width: 80%;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+}
