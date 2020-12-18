@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 body{
-    background-color: rgb(192, 125, 38);
+    background-color: rgb(209, 150, 73);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,7 +154,7 @@ body{
         grid-template-columns: 1fr;
     }
     .photo{
-        width: 80%;
+        width: 90%;
         height: 225px;
         border-radius: 5px;
         border: thin solid rgb(255, 229, 172);
